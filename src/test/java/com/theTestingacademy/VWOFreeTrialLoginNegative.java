@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -19,6 +20,7 @@ public class VWOFreeTrialLoginNegative {
         driver.get("https://vwo.com/free-trial");
         driver.findElement(By.id("page-v1-step1-email")).sendKeys("admin");
         driver.findElement(By.id("page-434cu-gdpr-consent-checkbox")).click();
+
        List<WebElement> buttons=driver.findElements(By.tagName("button"));
        buttons.get(0).click();
         Thread.sleep(1000);
