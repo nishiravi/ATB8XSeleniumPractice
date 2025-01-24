@@ -37,7 +37,7 @@ public class WebTable {
                     String company_xpath=dynamic_xpath+"/preceding-sibling::td";
                     String country_xpath=dynamic_xpath+"/following-sibling::td";
                     System.out.println("country of Helen Bennett is  "+driver.findElement(By.xpath(country_xpath)).getText());
-                    System.out.println("company of Helen Bennett is  "+driver.findElement(By.xpath(company_xpath)).getText());
+                    System.out.println("company of Helen Bennett is "+driver.findElement(By.xpath(company_xpath)).getText());
                 }
             }
         }
